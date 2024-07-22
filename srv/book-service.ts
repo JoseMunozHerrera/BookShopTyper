@@ -10,7 +10,7 @@ const car: { type: string, model: string, year: number } = {
 export default (srv: Service) => {
   srv.before('GET', 'Books', async (req: Request) => {
     console.log('Before creating Books');
-    let aaa: string = {};
+    let aaa: string = "";
     console.log(aaa);    
     const { Books } = await import('#cds-models/sap/capire/bookshop');
   });
